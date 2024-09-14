@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Scrollbar Styling</title>
+    </head>
+    <style>
+        #box{
+            width: 20%;
+            height: 300px;
+            border: 2px solid ;
+            overflow: auto;
+        }
+
+        #box::-webkit-scrollbar{
+            width:16px;
+            
+        }
+        #box::-webkit-scrollbar-track{
+            background-color: whitesmoke;
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.356);
+            border-radius: 10px;
+        } 
+        #box::-webkit-scrollbar-thumb{
+            background: linear-gradient(red,yellow);
+            border-radius: 13px;
+        }
+
+
+            
+    </style>
+    <body>
+        <div id="box">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Is Pseudo Class
+        </title>
+    </head>
+    <style>
+        /*.one :is(h1,h2) {
+            color: red;
+        }*/
+        /*:is(.one , .two) h1{
+            color:red;
+        }*/
+        :is(.one,.two) :is(h1,h2,p){
+            color: red;
+        }
+        .one{
+            width: 600px;
+            border: 2px solid red;
+        }
+        .two{
+            width: 600px;
+            border: 2px solid green;
+            margin-top: 30px;
+        }
+    </style>
+    <body>
+        <div class="one">
+      <h1>Welcome Here</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod corrupti officia laboriosam nobis non iusto impedit, quisquam asperiores, vitae vel dignissimos ut id doloremque, aperiam sint sed et laborum nam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod corrupti officia laboriosam nobis non iusto impedit, quisquam asperiores, vitae vel dignissimos ut id doloremque, aperiam sint sed et laborum nam</p>
+      <h2>Welcome Here</h2>
+    </div>
+        <div class="two">
+            <h1>Welcome Here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod corrupti officia laboriosam nobis non iusto impedit, quisquam asperiores, vitae vel dignissimos ut id doloremque, aperiam sint sed et laborum namQuod corrupti officia laboriosam nobis non iusto impedit, quisquam asperiores, vitae vel dignissimos ut id doloremque, aperiam sint sed et laborum nam.</p>
+            <h2>Welcome Here</h2>
+        </div>
+    </body>
+</html>

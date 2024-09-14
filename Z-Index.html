@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Z Index
+        </title>
+    </head>
+    <style>
+        .one{
+            border: 2px solid;
+            width:200px;
+            height: 150px;
+            background-color: aqua;
+            position: absolute;
+            
+            
+        }
+        .two{
+            border: 2px solid;
+            width:200px;
+            height: 150px;
+            background-color: blueviolet;
+            position: absolute;
+            left: 50px;
+            top: 60px;
+        }
+        .three{
+            border: 2px solid;
+            width:200px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            top: 120px;
+            z-index: 1;
+        
+        }
+    </style>
+    <body>
+        <div class="one">
+        A
+        </div>
+        <div class="two">
+        B     
+        </div>
+        <div class="three">
+        C    
+        </div>
+    </body>
+</html>

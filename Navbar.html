@@ -1,0 +1,177 @@
+    <html>
+    <head>
+        <title>
+            Proper Navbar
+        </title>
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <style>
+   body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+   }
+   .header{
+    width: 100%;
+    height: 80px;
+    background-color:skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+
+   }
+   .left{
+    
+   }
+   .left a{
+    text-decoration: none;
+    color: red;
+    font-size: 26px;
+   
+   }
+   .left h1{
+    margin: 0px 20px;
+   } 
+   .right i{
+    position: absolute;
+    top: 23px;
+    right:132px;
+    color: red;
+    font-size: 34px;
+    cursor: pointer;
+
+}
+   .center{
+    border: ;
+    margin:;
+    display: ;
+   }
+   .center ul{
+    margin-right:250px;
+    
+   }
+   
+   .center ul li{
+    list-style: none;
+    display: inline-block;
+    
+   }
+   .center ul li a{
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    padding: 0px 22px;
+   }
+   .sidebartogglemenu{
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 26px;
+    right: 40px;
+    background-color: ;
+    display: none;
+   }
+   .sidebar{
+    width: 275px;
+    height: 100vh;
+    background-color: yellow;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin-top: 80px;
+    transform: translate(275px);
+    transition: all 400ms;
+    display: ;
+   }
+   .sidebar ul{
+    padding: 0%;
+    margin: 0%;
+   }
+   .sidebar ul li{
+    list-style: none;
+    padding: 35px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.308);
+   }
+   .sidebar ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    
+    
+   }
+   #opensidebar:checked ~ .sidebar{
+    transform: translate(0);
+   }
+   .spinner{
+    height: 5px;
+    background-color: red;
+    
+   }
+   .spinner.middle,
+   .spinner.bottom
+   {
+    margin-top: 5px;
+   }
+   #opensidebar:checked ~ .sidebartogglemenu > .spinner.middle{
+    opacity: 0;
+   }
+   #opensidebar:checked ~ .sidebartogglemenu > .spinner.top{
+    transform: rotate(135deg);
+    margin-top: 12px;
+   }
+   #opensidebar:checked ~ .sidebartogglemenu > .spinner.bottom{
+    transform: rotate(-135deg);
+    margin-top: -15px;
+   }
+   @media(max-width:768px){
+    .center{
+        display: none;
+    }
+    .sidebartogglemenu{
+        display: block;
+    }
+    .left h1{
+        font-size: 35px;
+       } 
+   }
+    </style>
+    <body>
+        <div class="header">
+        <div class="left">
+        <a href=""><h1>My WebPage</h1></a>
+        </div>
+        <div class="center">
+        <ul>
+            <li><a href=""> <i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href=""><i class="fa-solid fa-circle-info"></i>   About US</a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>   Conact US</a></li>
+            <li><a href=""><i class="fa-solid fa-heart"></i>   Services</a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i>   Login</a></li>
+        </ul>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+        </div>
+        </div>
+        <input type="checkbox" id="opensidebar">
+        <label for="opensidebar" class="sidebartogglemenu">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+        <div class="sidebar">
+        <ul>
+            <li><a href=""><i class="fa-solid fa-house"></i>   Home</a></li>
+            <li><a href=""><i class="fa-solid fa-circle-info"></i>   About US</a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>   Contact US</a></li>
+            <li><a href=""><i class="fa-solid fa-heart"></i>   Services</a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i>   Login</a></li>
+        </ul>
+        </div>
+    </body>
+</html>

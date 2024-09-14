@@ -1,0 +1,75 @@
+ body{
+    padding: 0px;
+    margin: 0px;
+    
+ }
+ *{
+    box-sizing: border-box;
+ }
+ .header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+ }
+ .sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: yellowgreen;
+    position: fixed;
+    top: 0%;
+    left: ;: 0%;
+    margin-top: 70px;
+    transform: translateX(-300px);
+    transition: all 300ms;
+ }
+ .sidebar ul{
+    margin: 0%;
+    padding: 0%;
+ }
+ .sidebar ul li{
+    list-style: none;
+    padding: 29px 45px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+ }
+ .sidebar ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+ }
+ .sidebartoggle{
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 23px;
+    left: 50px;
+
+ }
+ #opensidebar:checked ~ .sidebar{
+    transform: translateX(0px);
+
+ }
+.spinner{
+    height: 3px;
+    background-color: yellowgreen;
+    transition: all 300ms;
+}
+.spinner.center,
+.spinner.bottom{
+    margin-top: 6px;
+}
+#opensidebar:checked ~ .sidebartoggle >.spinner.center{
+    opacity: 0;
+}
+#opensidebar:checked ~ .sidebartoggle >.spinner.top{
+    transform: rotate(135deg);
+    margin-top: 11px;
+
+}
+#opensidebar:checked ~ .sidebartoggle >.spinner.bottom
+{
+    transform: rotate(-135deg);
+    margin-top: -12px;
+
+}
+

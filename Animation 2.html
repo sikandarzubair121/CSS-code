@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Animation</title>
+    </head>
+    <style>
+  .one{
+    width: 250px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;line-height: 140px;
+    animation: sample 2s 2s infinite alternate;
+    animation-fill-mode: both;
+
+    
+  }
+  @keyframes sample {
+    0%{background-color: green; width: 300px;}
+    5%{background-color: blue; width: 400px;}
+   100%{background-color: red; width: 500px;}
+
+    
+  }
+  .one:hover{
+    animation-play-state:paused;
+  }
+    </style>
+    <body>
+        <div class="one">
+            <h1>Hello There</h1>
+        </div>
+    </body>
+    </html>

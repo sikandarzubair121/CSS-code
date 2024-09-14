@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Counter</title>
+        
+    </head>
+    <style>
+     body{counter-reset:mycounter;}
+     h1{
+        counter-reset: subcounter;
+     }
+
+     h1::before{
+        content:"NO" counter(mycounter) ":";
+        counter-increment: mycounter 1;
+        color: red;
+     }
+     h2::before{
+        content:counter(subcounter) ":";
+        counter-increment: subcounter 1;
+        color: gainsboro;
+     }
+    </style>
+    <body>
+        <h1>Marvel Superheroes</h1>
+        <h2>IronMan</h2>
+        <h2>Thor</h2>
+        <h2>Black Panther</h2>
+        <h1>DC Superheroes</h1>
+        <h2>BatMan</h2>
+        <h2>SuperMan</h2>
+        <h2>Shazam</h2>
+    </body>
+</html>

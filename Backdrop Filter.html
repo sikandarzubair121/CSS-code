@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Backdrop Filter
+        </title>
+    </head>
+    <style>
+        .parent{
+            border: 3px solid black;
+            width:1000px;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(Image/Web\ Development.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+       
+        .child{
+            position: absolute;
+            border: 3px solid whitesmoke;
+            width: 400px;
+            height: 300px;
+        backdrop-filter: blur(3px) saturate(170%);
+        }
+    </style>
+    <body>
+        <div class="parent">
+            <div class="child">
+           
+            </div>
+        </div>
+    </body>
+</html>

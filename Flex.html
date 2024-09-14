@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Flex</title>
+    </head>
+    <style>
+    .container{
+        width: 700px;
+        height: 300px;
+       
+        background-color: gray;
+        border: 2px solid black;
+        display: flex;
+        /*flex-direction:row;
+        flex-wrap: wrap; */
+
+        flex-flow: row wrap;
+        justify-content:center;
+        align-content:center ;
+        
+             
+        
+    }
+  .items{
+    margin:5px;
+    padding: 20px;
+
+  }
+  .item1{
+    background-color: aqua;
+  }
+  .item2{
+    background-color:wheat;
+  }
+  .item3{
+    background-color: palegreen;
+    /*Align self is used to align a specific item on which it is used*/
+    /*align-self: center;*/
+  }
+  .item4{
+    background-color: yellowgreen;
+  }
+  .item5{
+    background-color: goldenrod;
+  }
+    </style>
+    <body>
+        <div class="container">
+            <div class="items item1">One</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three</div>
+            <div class="items item4">Four</div>
+            <div class="items item5">Five</div>
+
+        </div>
+    </body>
+</html>

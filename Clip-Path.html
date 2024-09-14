@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            CLIP Path
+        </title>
+    </head>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .one{
+            clip-path: circle(50% at 49% 50%);
+            width: 300;
+            height: 250;
+            margin-top: 10px;
+        }
+        .two{
+            clip-path: ellipse(50% 50% at 65% 40%);
+            margin-top: 20px;
+        }
+        .three{
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            
+        }
+        .four{
+            clip-path: circle(30% at 50% 70% );
+            border: 2px solid ;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+    <body>
+        <div >
+            <img src="Image/ironman.jpg" class="one"/>
+        </div>
+        <div>
+            <img src="Image/ironman.jpg"/ class="two">
+        </div>
+        <div>
+            <img src="Image/ironman.jpg"/ class="three">
+        </div>
+        
+        <div class="four">
+
+        </div>
+    </body>
+</html>
